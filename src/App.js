@@ -1,25 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import ProtectedRoute from "./auth/protected-route";
+import Auth0ProviderWithHistory from './auth/auth0Provider'
+
+import Dashboard from './containers/Dashboard'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+        <Auth0ProviderWithHistory>
+
+          <div className="spruce">
+          <Navigation />
+          </div>
+          
+          <Switch> 
+            
+            <Route exact path='/' component={ Home }/>
+            <ProtectedRoute exact path='/dashboard' component={ Dashboard }/>
+            
+          </Switch>
+
+          <div className="spruce">
+            <Footer/>
+          </div>
+
+        </Auth0ProviderWithHistory>
+      </Router>
   );
 }
 
 export default App;
+
+
+
+import React, { Component } from 'react'
+import { connect } from 'react-redux'
+
+
+
+import { useAuth0 } from '@auth0/auth0-react';
