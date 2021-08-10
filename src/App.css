@@ -96,6 +96,14 @@ a {
   font-family: var(--ff-primary);
 }
 
+.width-10 {
+  width: 10rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
 /* COLUMNS */
 
 .container {
@@ -197,6 +205,28 @@ a {
 
 .info-card > p {
   font-size: 1.4rem;
+}
+
+/* DASHBOARD */
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboard > :first-child {
+  flex-basis: content;
+  flex-grow: 1;
+}
+
+.dashboard > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: 50%;
+}
+
+.sidebar {
+  width: 10rem;
 }
 
 /* FOOTER */

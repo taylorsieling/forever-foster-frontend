@@ -3,12 +3,13 @@ import React from 'react'
 import JSONPretty from 'react-json-pretty'
 
 export default function UserProfile() {
-    const user = useAuth0();
+    const { user } = useAuth0();
 
     return (
-        <div>
-            <h1>THE USER PAGE</h1>
-            <JSONPretty data={ user }/>
+        <div className="sidebar">
+            <div className="width-10 p-2"></div>
+            <h2>Welcome, {user.given_name}!</h2>
+            {/* // <JSONPretty data={ user }/> */}
         </div>
     )
 }
