@@ -1,6 +1,5 @@
 import React from 'react'
 import orangetabby from '../images/Orange-Tabby.png'
-import browntabby from '../images/Brown-Tabby.png'
 import { useAuth0 } from '@auth0/auth0-react'
 
 const Home = () => {

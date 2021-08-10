@@ -1,38 +1,220 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro&display=swap');
+
+:root {
+  --clr-manhattan: #f4c1a6;
+  --clr-spruce: #3b504f;
+  --clr-tana: #D3D6BB;
+  --clr-oyster: #ead5ce;
+  --clr-apple: #e59073;
+  --clr-sidecar: #faf7f1;
+  --clr-swan: #d7ece6;
+
+  --ff-primary: 'Amaranth', sans-serif;
+  --ff-accent: 'Source Sans Pro', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.5em;
+  font-family: var(--ff-accent);
+}
+
+h1 {
+  font-family: var(--ff-primary);
+  font-size: 4.2rem;
+  color: var(--clr-spruce);
+  text-shadow: white;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* COLOR UTILITY */
+
+.manhattan {
+  color: var(--clr-spruce);
+  background-color: var(--clr-manhattan);
+}
+
+.tana {
+  color: var(--clr-spruce);
+  background-color: var(--clr-tana);
+}
+
+.spruce {
+  color: var(--clr-sidecar);
+  background-color: var(--clr-spruce);
+}
+
+.oyster {
+  color: var(--clr-apple);
+  background-color: var(--clr-oyster);
+}
+
+.sidecar {
+  background-color: var(--clr-sidecar);
+}
+
+.swan {
+  color: var(--clr-spruce);
+  background-color: var(--clr-swan);
+}
+
+.apple {
+  color: #fff;
+  background-color: var(--clr-apple);
+}
+
+/* UTILITIES */
+
+.line-height {
+  line-height: 5rem;
+}
+
+.amaranth {
+  font-family: var(--ff-primary);
+}
+
+/* COLUMNS */
+
+.container {
+  margin: 0 5rem;
+  padding: 0 2rem;
+}
+
+.equal-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin: 0 2rem;
+}
+
+.equal-columns > * {
+  flex-basis: 100%;
+  padding: 0 2rem;
+}
+
+/* NAVBAR */
+
+.navbar, .footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
   text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.action {
+  padding: 0.8em 5em;
+  background-color: var(--clr-spruce);
+  border: 2px solid var(--clr-spruce);
+  font-size: 1.1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login {
+  padding: 0.6rem;
+  color: var(--clr-spruce);
+  background-color: var(--clr-sidecar);
+  border: 2px solid var(--clr-sidecar);
+  border-radius: 3px;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.action:hover, .login:hover {
+  transition: all .2s ease-in-out;
+  opacity: 75%;
+}
+
+
+/* HEADER */
+
+.header {
+  height: 35.5rem;
+}
+
+.header-title {
+  padding-left: 3rem;
+}
+
+.header-img {
+  object-fit: scale-down;
+  height: 42rem;
+  width: 100%;
+}
+
+.footer-pic {
+  position: absolute;
+  bottom: 0;
+}
+
+.header-body {
+  padding: 0.5rem 0 4rem 0;
+}
+
+.main {
+  color: var(--clr-apple);
+  padding: 3rem 1rem;
+}
+
+.info-card {
+  margin: 2rem;
+  padding: 2rem 3rem;
+  text-align: center;
+  align-items: center;
+  border-radius: 0.4rem;
+  height: 18rem;
+}
+
+.info-card > p {
+  font-size: 1.4rem;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 50%;
 }
