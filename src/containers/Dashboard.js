@@ -5,9 +5,10 @@ export default function Dashboard() {
     return (
         <div>
             <div className="dashboard">
-                <div><UserProfile/></div>
+                <div className="container m-8 p-8"><UserProfile/></div>
                 <div><h2>yada yada yada yada</h2></div>
             </div>
+            
             
         </div>
     )

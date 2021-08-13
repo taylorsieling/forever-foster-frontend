@@ -7,7 +7,7 @@ export default function UserProfile() {
 
     return (
         <div className="sidebar">
-            <div className="width-10 p-2"></div>
+            <div className="container m-8 p-8"></div>
             <h2>Welcome, {user.given_name}!</h2>
             {/* // <JSONPretty data={ user }/> */}
         </div>
