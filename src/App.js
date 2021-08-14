@@ -1,4 +1,3 @@
-import './App.css';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import ProtectedRoute from "./auth/protected-route";
@@ -8,6 +7,7 @@ import Navigation from './components/Navigation';
 import Dashboard from './containers/Dashboard'
 import Home from './components/Home';
 import Footer from './components/Footer';
+import FormContainer from './containers/FormContainer';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
             
             <Route exact path='/' component={ Home }/>
             <ProtectedRoute exact path='/dashboard' component={ Dashboard }/>
+            <ProtectedRoute exact path='/intake' component={FormContainer}/>
 
           </Switch>
 
