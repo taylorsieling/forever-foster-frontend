@@ -27,7 +27,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        cyan: '#9cdbff',
+        rosebud: 'var(--clr-rose-bud)',
+        manhattan: 'var(--clr-manhattan)',
+        opal: 'var(--clr-opal)',
+        snuff: 'var(--clr-snuff)',
       },
       spacing: {
         '96': '24rem',

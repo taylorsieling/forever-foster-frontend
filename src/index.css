@@ -5,13 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro&display=swap');
 
 :root {
-  --clr-manhattan: #f4c1a6;
+  
   --clr-spruce: #3b504f;
   --clr-tana: #D3D6BB;
   --clr-oyster: #ead5ce;
   --clr-apple: #e59073;
   --clr-sidecar: #faf7f1;
   --clr-swan: #d7ece6;
+
+  --clr-rose-bud: #f7b2a6;
+  --clr-manhattan: #f4c1a6;
+  --clr-opal: #aac3c4;
+  --clr-snuff: #e1d1e6;
 
   --ff-primary: 'Amaranth', sans-serif;
   --ff-accent: 'Source Sans Pro', sans-serif;
