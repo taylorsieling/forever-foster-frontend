@@ -14,7 +14,7 @@ function App() {
     <Router>
         <Auth0ProviderWithHistory>
 
-          <div className="spruce">
+          <div className="">
           <Navigation />
           </div>
           

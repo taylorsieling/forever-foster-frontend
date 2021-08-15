@@ -3,13 +3,13 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const navbar = {
-    width: '4rem',
-    padding: '1rem',
-    fontSize: '1rem',
-    letterSpacing: '0.3rem',
-    textDecoration: 'none',
-    fontWeight: 'bold',
-    color: '#faf7f1',
+    // width: '4rem',
+    // padding: '1rem',
+    // fontSize: '1rem',
+    // letterSpacing: '0.3rem',
+    // textDecoration: 'none',
+    // fontWeight: 'bold',
+    // color: '#faf7f1',
 }
 
 const Navigation = () => {
@@ -17,7 +17,10 @@ const Navigation = () => {
     const { loginWithRedirect,logout,user,isLoading } = useAuth0();
 
     return (
-        <div className="navbar">
+        <div className="flex items-center justify-between flex-wrap bg-red-900">
+            <div className="flex items-center flex-no-shrink text-white mr-6">
+                <span className="font-semibold text-gray-500 text-xl tracking-tight">Forever Foster</span>
+            </div>
 
             <div><h4>FOREVER FOSTER</h4></div>
 

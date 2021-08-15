@@ -3,23 +3,27 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 
 :root {
-  
-  --clr-spruce: #3b504f;
-  --clr-tana: #D3D6BB;
-  --clr-oyster: #ead5ce;
-  --clr-apple: #e59073;
-  --clr-sidecar: #faf7f1;
-  --clr-swan: #d7ece6;
-
   --clr-rose-bud: #f7b2a6;
   --clr-manhattan: #f4c1a6;
   --clr-opal: #aac3c4;
   --clr-snuff: #e1d1e6;
 
+  --clr-light-peach: #fdecdf;
+  --clr-peach: #f7b681;
+  --clr-dusty-rose: #efd5d5;
+  --clr-golden-rod: #bca446;
+  --clr-dusty-blue: #bed2d5;
+  --clr-mineral-blue: #dfe0e1;
+  --clr-lullaby-yellow: #f9edbe;
+  --clr-seashell-pink: #f8e5dc;
+  --clr-coral: #f17e5b;
+
   --ff-primary: 'Amaranth', sans-serif;
   --ff-accent: 'Source Sans Pro', sans-serif;
+  --ff-atkinson: 'Atkinson Hyperlegible', sans-serif;
 }
 
 * {
@@ -31,7 +35,7 @@ body {
   font-family: var(--ff-accent);
 }
 
-h1 {
+/* h1 {
   font-family: var(--ff-primary);
   font-size: 4.2rem;
   color: var(--clr-spruce);
@@ -57,11 +61,11 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-}
+} */
 
 /* COLOR UTILITY */
 
-.manhattan {
+/* .manhattan {
   color: var(--clr-spruce);
   background-color: var(--clr-manhattan);
 }
@@ -93,11 +97,11 @@ a {
 .apple {
   color: #fff;
   background-color: var(--clr-apple);
-}
+} */
 
 /* UTILITIES */
 
-.line-height {
+/* .line-height {
   line-height: 5rem;
 }
 
@@ -111,11 +115,11 @@ a {
 
 .p-2 {
   padding: 2rem;
-}
+} */
 
 /* COLUMNS */
 
-.container {
+/* .container {
   margin: 0 5rem;
   padding: 0 2rem;
 }
@@ -131,11 +135,11 @@ a {
 .equal-columns > * {
   flex-basis: 100%;
   padding: 0 2rem;
-}
+} */
 
 /* NAVBAR */
 
-.navbar, .footer {
+/* .navbar, .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -170,12 +174,12 @@ a {
 .action:hover, .login:hover {
   transition: all .2s ease-in-out;
   opacity: 75%;
-}
+} */
 
 
 /* HEADER */
 
-.header {
+/* .header {
   height: 35.5rem;
 }
 
@@ -214,11 +218,11 @@ a {
 
 .info-card > p {
   font-size: 1.4rem;
-}
+} */
 
 /* DASHBOARD */
 
-.dashboard {
+/* .dashboard {
   display: flex;
   flex-wrap: wrap;
 }
@@ -232,11 +236,11 @@ a {
   flex-basis: 0;
   flex-grow: 999;
   min-width: 50%;
-}
+} */
 
 /* FOOTER */
 
-.footer {
+/* .footer {
   display: flex;
   text-transform: uppercase;
 }
@@ -252,4 +256,4 @@ a {
   display: flex;
   flex-direction: column;
   width: 50%;
-}
+} */

@@ -1,5 +1,5 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  // purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
@@ -31,6 +31,13 @@ module.exports = {
         manhattan: 'var(--clr-manhattan)',
         opal: 'var(--clr-opal)',
         snuff: 'var(--clr-snuff)',
+        lpeach: 'var(--clr-light-peach)',
+        peach: 'var(--clr-peach)',
+        rose: 'var(--clr-dusty-rose)',
+        golden:'var(--clr-golden-rod',
+        dusty: 'var(--clr-dusty-blue)',
+        mineral: 'var(--clr-mineral-blue)',
+        lullaby: 'var(--clr-lullaby-yellow)',
       },
       spacing: {
         '96': '24rem',

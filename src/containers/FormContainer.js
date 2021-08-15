@@ -4,8 +4,8 @@ export default function FormContainer() {
 
     const textInput = "py-2 px-3 rounded border-2 border-rosebud text-base mt-1 focus:outline-none focus:ring-2 focus:ring-rosebud-600 focus:border-transparent"
     return (
-        <section id="intake-form">
-            <div class="flex h-screen bg-rosebud items-center justify-center  mt-32 mb-32">
+        <section id="intake-form" className="bg-lpeach">
+            <div class="flex h-screen bg-opal items-center justify-center  mt-32 mb-32">
                 <div class="grid bg-white rounded-lg shadow-xl w-11/12 md:w-9/12 lg:w-1/2">
                    
                     <div class="flex justify-center py-4">
@@ -19,16 +19,38 @@ export default function FormContainer() {
                         <input class={textInput} type="text" placeholder="Name" />
                     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
-      <div class="grid grid-cols-1">
-        <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Input 2</label>
-        <input class="py-2 px-3 rounded border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="text" placeholder="Input 2" />
-      </div>
-      <div class="grid grid-cols-1">
-        <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Input 3</label>
-        <input class="py-2 px-3 rounded border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" type="text" placeholder="Input 3" />
-      </div>
-    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
+                        <div class="grid grid-cols-1">
+                            <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Color</label>
+                            <input class={textInput} type="text" placeholder="Color" />
+                        </div>
+
+                        <div class="grid grid-cols-1">
+                            <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Pattern</label>
+                            <input class={textInput} type="text" placeholder="Pattern" />      
+                        </div>
+                    </div>
+
+                    <div class="flex mt-5 mx-7">
+                    <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Sex</label>
+                    <div class="flex">
+                        <div class="flex items-center mb-2 mr-4">
+                            <input type="radio" id="radio-example-1" name="radio" class="h-4 w-4 text-gray-700 px-3 py-3 border rounded mr-2"/>
+                            <label for="radio-example-1" class="text-gray-600">Male</label>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <input type="radio" id="radio-example-2" name="radio" class="h-4 w-4 text-gray-700 px-3 py-3 border rounded mr-2"/>
+                            <label for="radio-example-2" class="text-gray-600">Female</label>
+                        </div>
+                    </div>
+                        
+             
+
+                        <div class="grid grid-cols-1">
+                            <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Pattern</label>
+                            <input class={textInput} type="text" placeholder="Pattern" />      
+                        </div>
+                    </div>
 
     <div class="grid grid-cols-1 mt-5 mx-7">
       <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Selection</label>
