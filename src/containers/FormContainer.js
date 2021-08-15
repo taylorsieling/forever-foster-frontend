@@ -4,7 +4,7 @@ export default function FormContainer() {
 
     const textInput = "py-2 px-3 rounded border-2 border-rosebud text-base mt-1 focus:outline-none focus:ring-2 focus:ring-rosebud-600 focus:border-transparent"
     return (
-        <section id="intake-form" className="bg-lpeach">
+        <section id="intake-form" className="bg-red">
             <div class="flex h-screen bg-opal items-center justify-center  mt-32 mb-32">
                 <div class="grid bg-white rounded-lg shadow-xl w-11/12 md:w-9/12 lg:w-1/2">
                    
