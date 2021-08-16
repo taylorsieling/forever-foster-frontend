@@ -6,7 +6,7 @@ const Home = () => {
     const { loginWithRedirect} = useAuth0();
     return (
         <section id="home">
-            <div className="m-8 bg-red-600 text-xl">
+            <div className="m-8 text-xl">
                 <div className="equal-columns">
                     <div className="header-title">
                         <h1>forever foster</h1>

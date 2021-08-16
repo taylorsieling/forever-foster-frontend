@@ -3,13 +3,12 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 const navbar = {
-    // width: '4rem',
-    // padding: '1rem',
-    // fontSize: '1rem',
-    // letterSpacing: '0.3rem',
-    // textDecoration: 'none',
-    // fontWeight: 'bold',
-    // color: '#faf7f1',
+    width: '4rem',
+    padding: '0.4rem 0 0.4rem 1.4rem',
+    fontSize: '1rem',
+    textDecoration: 'none',
+    fontWeight: 'bold',
+    color: 'black',
 }
 
 const Navigation = () => {
@@ -17,14 +16,10 @@ const Navigation = () => {
     const { loginWithRedirect,logout,user,isLoading } = useAuth0();
 
     return (
-        <div className="flex items-center justify-between flex-wrap bg-peach">
-            <div className="flex items-center flex-no-shrink text-white mr-6">
-                <span className="font-semibold text-gray-500 text-xl tracking-tight">Forever Foster</span>
-            </div>
-
-            <div><h4>FOREVER FOSTER</h4></div>
-
+        <>
+        <nav class="flex items-center justify-between p-6 h-20 bg-white shadow-sm bg-peach">
             <div>
+                <span className="font-semibold text-2xl tracking-tight font-display justify-start">Forever Foster</span>
                 <NavLink
                     to="/"
                     exact
@@ -34,9 +29,8 @@ const Navigation = () => {
                         fontWeight: 'bold',
                     }}
                 >
-                HOME
+                Home
                 </NavLink>
-
                 <NavLink
                     to="/"
                     exact
@@ -46,51 +40,53 @@ const Navigation = () => {
                         fontWeight: 'bold',
                     }}
                 >
-                FEATURES
+                Features
                 </NavLink>
-
-                {!isLoading && !user && (
-                    <button
-                        className="login"
-                        onClick={() => loginWithRedirect()}
-                    >Log In</button>
-                )}
-
-                {!isLoading && user && (
-                    <button
-                        className="login"
-                        onClick={() => logout()}
-                    >Log Out</button>
-                )}
-
             </div>
+            <ul>
+            <li class="space-x-5 text-xl">
+                <a href="#" class="hidden sm:inline-block text-gray-700 hover:text-indigo-700">Home</a>
+                <a href="#" class="hidden sm:inline-block text-gray-700 hover:text-indigo-700">About</a>
+                <a href="#" class="hidden sm:inline-block text-gray-700 hover:text-indigo-700">Servics</a>
+                <a href="#" class="hidden sm:inline-block text-gray-700 hover:text-indigo-700">Products</a>
+            </li>
+            <div class="sm:hidden space-y-1 hover:cursor-pointer">
+                <span class="w-10 h-1 bg-gray-600 rounded-full block"></span>
+                <span class="w-10 h-1 bg-gray-600 rounded-full block"></span>
+                <span class="w-10 h-1 bg-gray-600 rounded-full block"></span>
+            </div>
+            </ul>
+        </nav>
 
-                {/* <NavLink
-                    to="/kittens"
-                    exact
-                    style={navbar}
-                    activeStyle={{
-                        textdecoration: 'underline',
-                        fontWeight: 'bold',
-                    }}
-                >
-                LOGIN
-                </NavLink> */}
+        <div className="flex items-center justify-between flex-wrap bg-peach">
+            <div className="mx-8 my-4">
+                <div className="float-left">
+                    
+                    <div >
+                        
 
-                {/* <NavLink
-                    to="/intake"
-                    exact
-                    style={button}
-                    activeStyle={{
-                        textdecoration: 'underline',
-                        fontWeight: 'bold',
-                    }}
-                >
-                SIGN UP
-                </NavLink> */}
+                        
 
+                    </div>
+                </div>
+                <div className="float-left">
+                            {!isLoading && !user && (
+                                <button
+                                    className="login"
+                                    onClick={() => loginWithRedirect()}
+                                >Log In</button>
+                            )}
+
+                            {!isLoading && user && (
+                                <button
+                                    className="login"
+                                    onClick={() => logout()}
+                                >Log Out</button>
+                            )}
+                        </div>
+            </div>
         </div>
-
+            </>
     )
 }
 
