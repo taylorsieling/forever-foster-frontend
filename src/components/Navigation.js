@@ -15,7 +15,7 @@ const Navigation = () => {
     const { loginWithRedirect,logout,user,isLoading } = useAuth0();
 
     return (
-        <nav class="flex items-center justify-between p-6 h-20 bg-white shadow-sm bg-peach px-20">
+        <nav class="flex items-center justify-between p-6 h-20 bg-white shadow-sm bg-lpeach px-20">
             <div>
                 <span className="text-2xl tracking-tight font-display justify-start">Forever Foster</span>
                 <NavLink
@@ -77,7 +77,7 @@ const Navigation = () => {
                         >Login</button>
 
                         <button
-                        className="bg-coral text-base px-3 py-2 text-white rounded-lg"
+                        className="bg-peach text-base px-3 py-2 text-white rounded-lg"
                         onClick={() => loginWithRedirect()}
                         >Get Started</button>
                     </div>
@@ -85,7 +85,7 @@ const Navigation = () => {
 
                 {!isLoading && user && (
                     <button
-                        className="bg-coral text-base px-3 py-2 text-white rounded-lg"
+                        className="bg-peach text-base px-3 py-2 text-white rounded-lg"
                         onClick={() => logout()}
                     >Log Out</button>
                 )}

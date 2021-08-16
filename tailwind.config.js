@@ -31,9 +31,10 @@ module.exports = {
         manhattan: 'var(--clr-manhattan)',
         opal: 'var(--clr-opal)',
         snuff: 'var(--clr-snuff)',
-        peach: 'var(--clr-light-peach)',
-        coral: 'var(--clr-peach)',
+        lpeach: 'var(--clr-light-peach)',
+        peach: 'var(--clr-peach)',
         dusty: 'var(--clr-dusty-blue)',
+        golden: 'var(--clr-golden-rod)',
       },
       spacing: {
         '96': '24rem',
