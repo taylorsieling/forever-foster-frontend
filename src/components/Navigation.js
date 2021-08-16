@@ -17,7 +17,7 @@ const Navigation = () => {
     const { loginWithRedirect,logout,user,isLoading } = useAuth0();
 
     return (
-        <div className="flex items-center justify-between flex-wrap bg-red-900">
+        <div className="flex items-center justify-between flex-wrap bg-peach">
             <div className="flex items-center flex-no-shrink text-white mr-6">
                 <span className="font-semibold text-gray-500 text-xl tracking-tight">Forever Foster</span>
             </div>

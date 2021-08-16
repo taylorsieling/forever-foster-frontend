@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
@@ -48,7 +48,7 @@ h2 {
 
 h4 {
   margin: 0;
-}
+} */
 
 ul {
   list-style: none;
@@ -61,11 +61,11 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-} */
+}
 
 /* COLOR UTILITY */
 
-/* .manhattan {
+.manhattan {
   color: var(--clr-spruce);
   background-color: var(--clr-manhattan);
 }
@@ -97,11 +97,11 @@ a {
 .apple {
   color: #fff;
   background-color: var(--clr-apple);
-} */
+}
 
 /* UTILITIES */
 
-/* .line-height {
+.line-height {
   line-height: 5rem;
 }
 
@@ -115,11 +115,11 @@ a {
 
 .p-2 {
   padding: 2rem;
-} */
+}
 
 /* COLUMNS */
 
-/* .container {
+.container {
   margin: 0 5rem;
   padding: 0 2rem;
 }
@@ -135,11 +135,11 @@ a {
 .equal-columns > * {
   flex-basis: 100%;
   padding: 0 2rem;
-} */
+}
 
 /* NAVBAR */
 
-/* .navbar, .footer {
+.navbar, .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -174,12 +174,12 @@ a {
 .action:hover, .login:hover {
   transition: all .2s ease-in-out;
   opacity: 75%;
-} */
+}
 
 
 /* HEADER */
 
-/* .header {
+.header {
   height: 35.5rem;
 }
 
@@ -218,11 +218,11 @@ a {
 
 .info-card > p {
   font-size: 1.4rem;
-} */
+}
 
 /* DASHBOARD */
 
-/* .dashboard {
+.dashboard {
   display: flex;
   flex-wrap: wrap;
 }
@@ -236,11 +236,11 @@ a {
   flex-basis: 0;
   flex-grow: 999;
   min-width: 50%;
-} */
+}
 
 /* FOOTER */
 
-/* .footer {
+.footer {
   display: flex;
   text-transform: uppercase;
 }
@@ -256,4 +256,4 @@ a {
   display: flex;
   flex-direction: column;
   width: 50%;
-} */
+}

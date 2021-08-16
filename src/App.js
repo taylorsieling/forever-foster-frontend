@@ -14,7 +14,7 @@ function App() {
     <Router>
         <Auth0ProviderWithHistory>
 
-          <div className="">
+          <div className="bg-opal">
           <Navigation />
           </div>
           
