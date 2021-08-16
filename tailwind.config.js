@@ -32,6 +32,7 @@ module.exports = {
         opal: 'var(--clr-opal)',
         snuff: 'var(--clr-snuff)',
         peach: 'var(--clr-light-peach)',
+        coral: 'var(--clr-peach)',
       },
       spacing: {
         '96': '24rem',

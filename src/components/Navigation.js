@@ -4,10 +4,9 @@ import { NavLink } from 'react-router-dom'
 
 const navbar = {
     width: '4rem',
-    padding: '0.4rem 0 0.4rem 1.4rem',
+    padding: '0.4rem 0 0.4rem 2rem',
     fontSize: '1rem',
     textDecoration: 'none',
-    fontWeight: 'bold',
     color: 'black',
 }
 
@@ -16,17 +15,15 @@ const Navigation = () => {
     const { loginWithRedirect,logout,user,isLoading } = useAuth0();
 
     return (
-        <>
-        <nav class="flex items-center justify-between p-6 h-20 bg-white shadow-sm bg-peach">
+        <nav class="flex items-center justify-between p-6 h-20 bg-white shadow-sm bg-peach px-20">
             <div>
-                <span className="font-semibold text-2xl tracking-tight font-display justify-start">Forever Foster</span>
+                <span className="text-2xl tracking-tight font-display justify-start">Forever Foster</span>
                 <NavLink
                     to="/"
                     exact
                     style={navbar}
                     activeStyle={{
                         textdecoration: 'underline',
-                        fontWeight: 'bold',
                     }}
                 >
                 Home
@@ -37,56 +34,64 @@ const Navigation = () => {
                     style={navbar}
                     activeStyle={{
                         textdecoration: 'underline',
-                        fontWeight: 'bold',
                     }}
                 >
                 Features
                 </NavLink>
+                <NavLink
+                    to="/"
+                    exact
+                    style={navbar}
+                    activeStyle={{
+                        textdecoration: 'underline',
+                    }}
+                >
+                About
+                </NavLink>
+                <NavLink
+                    to="/"
+                    exact
+                    style={navbar}
+                    activeStyle={{
+                        textdecoration: 'underline',
+                    }}
+                >
+                Contact
+                </NavLink>
+
+                {/* <div class="sm:hidden space-y-1 hover:cursor-pointer">
+                    <span class="w-10 h-1 bg-gray-600 rounded-full block"></span>
+                    <span class="w-10 h-1 bg-gray-600 rounded-full block"></span>
+                    <span class="w-10 h-1 bg-gray-600 rounded-full block"></span>
+                </div> */}
+
             </div>
-            <ul>
-            <li class="space-x-5 text-xl">
-                <a href="#" class="hidden sm:inline-block text-gray-700 hover:text-indigo-700">Home</a>
-                <a href="#" class="hidden sm:inline-block text-gray-700 hover:text-indigo-700">About</a>
-                <a href="#" class="hidden sm:inline-block text-gray-700 hover:text-indigo-700">Servics</a>
-                <a href="#" class="hidden sm:inline-block text-gray-700 hover:text-indigo-700">Products</a>
-            </li>
-            <div class="sm:hidden space-y-1 hover:cursor-pointer">
-                <span class="w-10 h-1 bg-gray-600 rounded-full block"></span>
-                <span class="w-10 h-1 bg-gray-600 rounded-full block"></span>
-                <span class="w-10 h-1 bg-gray-600 rounded-full block"></span>
-            </div>
-            </ul>
-        </nav>
 
-        <div className="flex items-center justify-between flex-wrap bg-peach">
-            <div className="mx-8 my-4">
-                <div className="float-left">
-                    
-                    <div >
-                        
+            <div>
 
-                        
+                {!isLoading && !user && (
+                    <div>
+                        <button
+                        className="text-base px-8 py-2"
+                        onClick={() => loginWithRedirect()}
+                        >Login</button>
 
+                        <button
+                        className="bg-coral text-base px-3 py-2 text-white rounded-lg"
+                        onClick={() => loginWithRedirect()}
+                        >Get Started</button>
                     </div>
-                </div>
-                <div className="float-left">
-                            {!isLoading && !user && (
-                                <button
-                                    className="login"
-                                    onClick={() => loginWithRedirect()}
-                                >Log In</button>
-                            )}
+                )}
 
-                            {!isLoading && user && (
-                                <button
-                                    className="login"
-                                    onClick={() => logout()}
-                                >Log Out</button>
-                            )}
-                        </div>
+                {!isLoading && user && (
+                    <button
+                        className="bg-coral text-base px-3 py-2 text-white rounded-lg"
+                        onClick={() => logout()}
+                    >Log Out</button>
+                )}
             </div>
-        </div>
-            </>
+
+        </nav>
     )
 }
 
