@@ -14,7 +14,7 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="bg-dusty">
+            <div className="bg-mineral">
                 <div className="px-36 py-24 text-2xl justify-left">
                     <h2><i>“A kitten is, in the animal world, what a rosebud is in the garden.”<br/><br/>- Robert Southey</i></h2>
                     <p></p>

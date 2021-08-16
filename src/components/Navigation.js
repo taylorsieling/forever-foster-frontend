@@ -17,7 +17,7 @@ const Navigation = () => {
     return (
         <nav class="flex items-center justify-between p-6 h-20 bg-white shadow-sm bg-lpeach px-20">
             <div>
-                <span className="text-2xl tracking-tight font-display justify-start text-grey">Forever Foster</span>
+                <span className="text-2xl tracking-tight font-display justify-start text-grey">forever foster <i class="fa fa-paw" aria-hidden="true"></i></span>
                 <NavLink
                     to="/"
                     exact

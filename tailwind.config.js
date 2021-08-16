@@ -34,7 +34,7 @@ module.exports = {
         snuff: 'var(--clr-snuff)',
         lpeach: 'var(--clr-light-peach)',
         peach: 'var(--clr-peach)',
-        dusty: 'var(--clr-dusty-blue)',
+        mineral: 'var(--clr-mineral-blue)',
         golden: 'var(--clr-golden-rod)',
       },
       spacing: {
