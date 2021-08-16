@@ -7,25 +7,15 @@ const Home = () => {
     return (
         <section id="home">
             <div className="header">
-                <div className="p-36 justify-left max-w-3xl text-golden">
+                <div className="p-36 justify-left max-w-3xl text-grey">
                     <h1 className="text-6xl font-display pb-4">forever foster</h1>
                     <h2 className="text-3xl pb-6">Giving you the tools to keep your foster kittens safe, healthy, and most of all, <strong>loved.</strong></h2>
-                    <p><button className="bg-golden text-base px-8 py-3 text-white rounded-lg" onClick={() => loginWithRedirect()}>Get Started</button></p>
+                    <p><button className="bg-peach text-base px-8 py-3 text-white rounded-lg" onClick={() => loginWithRedirect()}>Get Started</button></p>
                 </div>
             </div>
-            {/* <div className="m-8 text-xl">
-                <div className="equal-columns">
-                    <div className="header-title">
-                        <h1>forever foster</h1>
-                        <h2>Giving you the tools to keep your foster kittens safe, healthy, and most of all, <strong>loved.</strong></h2>
-                        <p className="line-height"><button className="link-btn action" onClick={() => loginWithRedirect()}>Get Started</button></p>
-                    </div>
-                    <img className="header-img" src={orangetabby} alt="floofy kitten"/>
-                </div>
-            </div> */}
 
             <div className="bg-dusty">
-                <div className="main equal-columns">
+                <div className="px-36 py-24 text-2xl justify-left">
                     <h2><i>“A kitten is, in the animal world, what a rosebud is in the garden.”<br/><br/>- Robert Southey</i></h2>
                     <p></p>
                 </div>

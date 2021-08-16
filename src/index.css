@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 
 :root {
+  --clr-dark-grey: #303030;
   --clr-rose-bud: #f7b2a6;
   --clr-manhattan: #f4c1a6;
   --clr-opal: #aac3c4;
@@ -33,6 +34,7 @@
 body {
   font-size: 1.5em;
   font-family: var(--ff-accent);
+  color: var(--clr-dark-grey);
 }
 
 .header {

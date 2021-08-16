@@ -27,6 +27,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        grey: 'var(--clr-dark-grey)',
         rosebud: 'var(--clr-rose-bud)',
         manhattan: 'var(--clr-manhattan)',
         opal: 'var(--clr-opal)',
