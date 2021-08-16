@@ -35,6 +35,16 @@ body {
   font-family: var(--ff-accent);
 }
 
+.header {
+  background-image: url("https://images.unsplash.com/photo-1579202558739-17e09566bd6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2788&q=80");
+  background-repeat: no-repeat;
+  background-color:#f4f8f9;
+  background-size: contain;
+  height: 250px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
 /* h1 {
   font-family: var(--ff-primary);
   font-size: 4.2rem;

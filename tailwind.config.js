@@ -33,6 +33,7 @@ module.exports = {
         snuff: 'var(--clr-snuff)',
         peach: 'var(--clr-light-peach)',
         coral: 'var(--clr-peach)',
+        dusty: 'var(--clr-dusty-blue)',
       },
       spacing: {
         '96': '24rem',
