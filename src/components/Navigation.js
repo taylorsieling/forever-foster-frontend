@@ -84,10 +84,23 @@ const Navigation = () => {
                 )}
 
                 {!isLoading && user && (
-                    <button
-                        className="bg-peach text-base px-3 py-2 text-white rounded-lg"
-                        onClick={() => logout()}
-                    >Log Out</button>
+                    <div>
+                        <NavLink
+                            to="/"
+                            exact
+                            style={navbar}
+                            activeStyle={{
+                                textdecoration: 'underline',
+                            }}
+                        >
+                        Dashboard
+                        </NavLink>
+
+                        <button
+                            className="bg-peach text-base px-3 py-2 ml-8 text-white rounded-lg"
+                            onClick={() => logout()}
+                        >Log Out</button>
+                    </div>
                 )}
             </div>
 
