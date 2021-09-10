@@ -6,21 +6,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 
 :root {
-  --clr-dark-grey: #303030;
-  --clr-rose-bud: #f7b2a6;
-  --clr-manhattan: #f4c1a6;
-  --clr-opal: #aac3c4;
-  --clr-snuff: #e1d1e6;
-
-  --clr-light-peach: #fdecdf;
-  --clr-peach: #f7b681;
-  --clr-dusty-rose: #efd5d5;
-  --clr-golden-rod: #bca446;
-  --clr-dusty-blue: #bed2d5;
-  --clr-mineral-blue: #dfe0e1;
-  --clr-lullaby-yellow: #f9edbe;
-  --clr-seashell-pink: #f8e5dc;
-  --clr-coral: #f17e5b;
+  --clr-mint: #cad9d2;
+  --clr-rosewater: #ffded1;
+  --clr-melon: #f9b1a5;
+  --clr-marigold: #f3c984;
+  --clr-olive: #b7b578;
+  --clr-warm-gray: #727375;
+  --clr-dark-gray: #595a5c;
+  --clr-blkgray: #303030;
 
   --ff-primary: 'Amaranth', sans-serif;
   --ff-accent: 'Source Sans Pro', sans-serif;

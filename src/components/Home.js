@@ -7,14 +7,14 @@ const Home = () => {
     return (
         <section id="home">
             <div className="header">
-                <div className="p-36 justify-left max-w-3xl text-grey">
+                <div className="p-36 justify-left max-w-3xl text-blkgray">
                     <h1 className="text-6xl font-display pb-4">forever foster</h1>
                     <h2 className="text-3xl pb-6">Giving you the tools to keep your foster kittens safe, healthy, and most of all, <strong>loved.</strong></h2>
-                    <p><button className="bg-peach text-base px-8 py-3 text-white rounded-lg" onClick={() => loginWithRedirect()}>Get Started</button></p>
+                    <p><button className="bg-melon text-base px-8 py-3 text-white rounded-lg" onClick={() => loginWithRedirect()}>Get Started</button></p>
                 </div>
             </div>
 
-            <div className="bg-mineral">
+            <div className="bg-rosewater">
                 <div className="px-36 py-24 text-2xl justify-left">
                     <h2><i>“A kitten is, in the animal world, what a rosebud is in the garden.”<br/><br/>- Robert Southey</i></h2>
                     <p></p>

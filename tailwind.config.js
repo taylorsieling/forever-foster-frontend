@@ -27,15 +27,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        grey: 'var(--clr-dark-grey)',
-        rosebud: 'var(--clr-rose-bud)',
-        manhattan: 'var(--clr-manhattan)',
-        opal: 'var(--clr-opal)',
-        snuff: 'var(--clr-snuff)',
-        lpeach: 'var(--clr-light-peach)',
-        peach: 'var(--clr-peach)',
-        mineral: 'var(--clr-mineral-blue)',
-        golden: 'var(--clr-golden-rod)',
+        mint: 'var(--clr-mint)',
+        rosewater: 'var(--clr-rosewater)',
+        melon: 'var(--clr-melon)',
+        marigold: 'var(--clr-marigold)',
+        olive: 'var(--clr-olive)',
+        warmgray: 'var(--clr-warm-gray)',
+        darkgray: 'var(--clr-dark-gray)',
+        blkgray: 'var(--clr-blkgray)',
       },
       spacing: {
         '96': '24rem',
