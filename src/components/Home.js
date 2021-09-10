@@ -45,19 +45,19 @@ const Home = () => {
                     <div></div>
 
                     <ul>
-                        <li className="amaranth"><strong>Forever Foster</strong></li>
+                        <li className="amaranth text-melon"><strong>Forever Foster</strong></li>
                         <li><a href="http://localhost:3000">Features</a></li>
                         <li><a href="http://localhost:3000">Take a Tour</a></li>
                         <li><a href="http://localhost:3000">About Us</a></li>
                     </ul>
                     <ul>
-                        <li className="amaranth"><strong>Getting Started</strong></li>
+                        <li className="amaranth text-olive"><strong>Getting Started</strong></li>
                         <li><a href="http://localhost:3000">Sign Up</a></li>
                         <li><a href="http://localhost:3000">Log In</a></li>
                         <li><a href="http://localhost:3000">Adopt a Kitten</a></li>
                     </ul>
                     <ul>
-                        <li className="amaranth"><strong>Contact</strong></li>
+                        <li className="amaranth text-marigold"><strong>Contact</strong></li>
                         <li><a href="http://localhost:3000">Email</a></li>
                         <li><a href="http://localhost:3000">Twitter</a></li>
                         <li><a href="http://localhost:3000">Github</a></li>

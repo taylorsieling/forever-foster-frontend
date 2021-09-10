@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <nav class="flex items-center justify-between p-6 h-14 text-white shadow-sm bg-opal px-20">
+        <nav class="flex items-center justify-between p-6 h-14 text-blkgray shadow-sm bg-mint px-20">
             <div>
                 <span className="text-xl tracking-tight font-display justify-start">Forever Foster</span>
             </div>
