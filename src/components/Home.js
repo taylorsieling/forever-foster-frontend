@@ -1,11 +1,17 @@
 import React from 'react'
-import orangetabby from '../images/Orange-Tabby.png'
+import Navigation from '../components/Navigation';
 import { useAuth0 } from '@auth0/auth0-react'
 
 const Home = () => {
     const { loginWithRedirect} = useAuth0();
     return (
+
         <section id="home">
+
+            <div className="bg-opal">
+                <Navigation />
+            </div>
+
             <div className="header">
                 <div className="p-36 justify-left max-w-3xl text-blkgray">
                     <h1 className="text-6xl font-display pb-4">forever foster</h1>
@@ -41,7 +47,7 @@ const Home = () => {
             </div>
 
             <div className="spruce">
-                <div className="equal-columns">
+                <div className="equal-columns p-20">
                     <div></div>
 
                     <ul>

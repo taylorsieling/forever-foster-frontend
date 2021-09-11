@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import ProtectedRoute from "./auth/protected-route";
 import Auth0ProviderWithHistory from './auth/auth0Provider'
 
-import Navigation from './components/Navigation';
 import Dashboard from './containers/Dashboard'
 import Home from './components/Home';
 import Footer from './components/Footer';
@@ -14,9 +13,7 @@ function App() {
     <Router>
         <Auth0ProviderWithHistory>
 
-          <div className="bg-opal">
-          <Navigation />
-          </div>
+          
           
           <Switch> 
             
